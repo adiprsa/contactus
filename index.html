@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>الاتصال</title>
+    <!-- Pure css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+    integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Pure css -->
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/e55cb15059.js"></script><!-- fontawesome -->
+  </head>
+  <style media="screen">
+    body, html {
+      height: 100%;
+      /*margin: 0;*/
+    }
+    body {
+      background: /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgba(0, 0, 0, 0.50),
+        rgba(0, 0, 0, 0.50)
+      ),
+      /* bottom, image */
+      url("/www/arab/img/background-new.jpeg");
+      background-size: 100% 100%;
+    }
+    i {
+      padding-left: 10px;
+    }
+    .pure-g {
+      text-align: center;
+    }
+    .pure-img {
+      display: inline;
+    }
+    .pure-u-1 {
+      margin-top: 5%;
+    }
+    .button-xlarge {
+      font-size: 150%;
+    }
+    .button-whatsapp {
+      background-color: #0AE684;
+      color: white;
+    }
+    .button-website {
+      background-color: #E01F77;
+      color: white;
+    }
+    @media screen and (max-device-width:1024px) {/*For ipad*/
+      body {
+        background-image: url("/www/arab/img/background-new.jpeg");
+        background-size: cover;
+
+      }
+      .pure-img {
+        display: inline;
+        width: 40%;
+      }
+      .pure-u-1 {
+        margin-top: 15%;
+      }
+      .button-xlarge {
+        font-size: 200%;
+      }
+    }
+    @media screen and (max-device-width:414px) {/*For iphone 6 plus*/
+      .pure-img {
+        width: 60%;
+      }
+    }
+    @media screen and (max-device-width:375px) {/*For iphone 6*/
+      .button-xlarge {
+        font-size: 170%;
+      }
+    }
+    @media screen and (max-device-width:320px) {/*For iphone 5*/
+      .button-xlarge {
+        font-size: 150%;
+      }
+    }
+  </style>
+  <body class="pure-g">
+    <div class="pure-u-1">
+      <img class="pure-img" src="/www/arab/img/logo.png" alt="">
+    </div>
+    <div class="pure-u-1">
+      <a class="button-xlarge button-whatsapp pure-button" href="#">الاتصال بنا على ال واتساب
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="pure-u-1">
+      <a class="button-xlarge button-website pure-button" href="#">زيارة موقعنا على الانترنت
+        <i class="fa fa-safari" aria-hidden="true"></i>
+      </a>
+    </div>
+  </body>
+</html>
